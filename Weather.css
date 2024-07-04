@@ -1,0 +1,129 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+  background-size: cover;
+  background-position: center;
+  transition: background 0.5s ease; 
+}
+
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  overflow: auto; 
+}
+
+.search-box {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 0 75px;
+}
+
+
+.search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar::placeholder {
+  color: rgba(51, 51, 51, 0.7);
+}
+
+.search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+.location-box {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.location {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.temp {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.weather {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+
+.weather-app {
+  width: 100vw; 
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+.clear-bg {
+  background-image: url('https://cdn.pixabay.com/photo/2020/02/04/03/50/sky-4817252_1280.jpg');
+}
+
+.cloudy-bg {
+  background-image: url('https://cdn.pixabay.com/photo/2020/05/03/20/02/clouds-5126537_640.jpg');
+}
+
+.rainy-bg {
+  background-image: url('https://cdn.pixabay.com/photo/2023/08/28/16/42/ai-generated-8219533_640.jpg');
+}
+
+.storm-bg {
+  background-image: url('https://cdn.pixabay.com/photo/2020/03/24/11/21/thunder-4963719_640.jpg');
+}
+
+.snow-bg {
+  background-image: url('https://cdn.pixabay.com/photo/2023/12/19/20/23/hazelnut-8458335_640.jpg');
+}
+
+.default-bg {
+  background-color: #ffffff; 
+}
